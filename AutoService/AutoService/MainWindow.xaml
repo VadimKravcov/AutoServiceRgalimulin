@@ -24,6 +24,9 @@
                 Style="{StaticResource BrownButtonStyle}"
                 
                 Visibility="{Binding AdminVisibility}"
+                
+                Click="AddService_Click"
+                
             />
 
             <Button      
@@ -134,7 +137,10 @@
                                     <Button 
                                         Content="Редактировать" 
                                         Name="EditButton"
-                                        Style="{StaticResource BrownButtonStyle}"/>
+                                        Style="{StaticResource BrownButtonStyle}"
+                                        Click="EditButton_Click"
+                                        
+                                        />
                                     <Button 
                                         Content="Удалить" 
                                         Name="DeleteButton"

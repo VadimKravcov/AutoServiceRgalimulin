@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Создание приложения Р.Г\AutoService\AutoService\obj\Debug\
+C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\
 AutoService
 none
 false
 DEBUG;TRACE
-C:\Создание приложения Р.Г\AutoService\AutoService\App.xaml
-2-1983797629
+C:\Git\AutoServiceRgalimulin\AutoService\AutoService\App.xaml
+3-973684700
 21855488768
-21123816434
-18-1867274551
-MainWindow.xaml;windows\InputBoxWindow.xaml;
+221143878775
+181848386663
+MainWindow.xaml;windows\InputBoxWindow.xaml;windows\ServiceWindow.xaml;
 
 False
 

@@ -27,7 +27,7 @@ namespace AutoService
         {
             get 
             {
-                return new Uri(System.IO.Path.Combine(Environment.CurrentDirectory, MainImagePath.Trim()));
+                return new Uri(System.IO.Path.Combine(Environment.CurrentDirectory, MainImagePath ?? "" ));
             }
         }
 
@@ -310,6 +310,33 @@ namespace AutoService
 
             // перечитываем изменившийся список, не забывая в сеттере вызвать PropertyChanged
             ServiceList = Core.DB.Service.ToList();
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            var SelectedService = MainDataGrid.SelectedItem as Service;
+            var EditServiceWindow = new windows.ServiceWindow(SelectedService);
+            if ((bool)EditServiceWindow.ShowDialog())
+            {
+                // при успешном завершении не забываем перерисовать список услуг
+                PropertyChanged(this, new PropertyChangedEventArgs("ServiceList"));
+                // и еще счетчики - их добавьте сами
+            }
+        }
+
+        private void AddService_Click(object sender, RoutedEventArgs e)
+        {
+            // создаем новую услугуs
+            var NewService = new Service();
+
+            var NewServiceWindow = new windows.ServiceWindow(NewService);
+            if ((bool)NewServiceWindow.ShowDialog())
+            {
+                // список услуг нужно перечитать с сервера
+                ServiceList = Core.DB.Service.ToList();
+                PropertyChanged(this, new PropertyChangedEventArgs("FilteredProductsCount"));
+                PropertyChanged(this, new PropertyChangedEventArgs("ProductsCount"));
+            }
         }
     }
 }
