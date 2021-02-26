@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Git\AutoServiceRgalimulin\AutoService\AutoService\App.xaml
-3-973684700
+42133937571
 21855488768
-23301519408
+24492788070
 181848386663
-MainWindow.xaml;windows\InputBoxWindow.xaml;windows\ServiceWindow.xaml;
+MainWindow.xaml;windows\ClientServiceWindow.xaml;windows\InputBoxWindow.xaml;windows\ServiceWindow.xaml;
 
 True
 

@@ -338,5 +338,12 @@ namespace AutoService
                 PropertyChanged(this, new PropertyChangedEventArgs("ProductsCount"));
             }
         }
+
+        private void ZapButton_Click(object sender, RoutedEventArgs e)
+        {
+            var SelectedService = MainDataGrid.SelectedItem as Service;
+            var SubscrideServiceWindow = new windows.ClientServiceWindow(SelectedService);
+            SubscrideServiceWindow.ShowDialog();
+        }
     }
 }

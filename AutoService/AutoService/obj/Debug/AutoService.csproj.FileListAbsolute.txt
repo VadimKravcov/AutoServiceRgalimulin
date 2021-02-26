@@ -50,3 +50,5 @@ C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\AutoService.exe
 C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\AutoService.pdb
 C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\windows\ServiceWindow.g.cs
 C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\windows\ServiceWindow.baml
+C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\windows\ClientServiceWindow.g.cs
+C:\Git\AutoServiceRgalimulin\AutoService\AutoService\obj\Debug\windows\ClientServiceWindow.baml

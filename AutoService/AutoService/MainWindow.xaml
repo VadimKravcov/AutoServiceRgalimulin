@@ -141,6 +141,15 @@
                                         Click="EditButton_Click"
                                         
                                         />
+
+                                    <Button 
+                                        Content="Запись на услугу" 
+                                        Name="ZapButton"
+                                        Style="{StaticResource BrownButtonStyle}"
+                                        Click="ZapButton_Click"
+                                        
+                                        />
+
                                     <Button 
                                         Content="Удалить" 
                                         Name="DeleteButton"
